@@ -46,37 +46,31 @@ async function updatePost() {
 </script>
 
 <template>
-  <div class="container mt-5">
-    <Back />
-    <div class="card border-0 rounded shadow">
-      <div class="card-body">
-        <form @submit.prevent="updatePost()">
-          <div class="mb-3">
-            <label class="form-label fw-bold">Image</label>
-            <input type="file" class="form-control" @change="handleFileChange($event)">
-            <div v-if="errors.image" class="alert alert-danger mt-2">
-              <span>{{ errors.image[0] }}</span>
-            </div>
-          </div>
-          <div class="mb-3">
-            <label class="form-label fw-bold">Title</label>
-            <input v-model="title" type="text" class="form-control" placeholder="Title Post">
-            <div v-if="errors.title" class="alert alert-danger mt-2">
-              <span>{{ errors.title[0] }}</span>
-            </div>
-          </div>
-          <div class="mb-3">
-            <label class="form-label fw-bold">Content</label>
-            <textarea v-model="content" class="form-control" rows="5" placeholder="Content Post" />
-            <div v-if="errors.content" class="alert alert-danger mt-2">
-              <span>{{ errors.content[0] }}</span>
-            </div>
-          </div>
-          <UButton color="sky" variant="soft" type="submit" class="btn btn-md btn-primary rounded-sm shadow border-0">
-            Update
-          </UButton>
-        </form>
+  <Back />
+  <form @submit.prevent="updatePost()">
+    <div class="space-y-3">
+      <label>Image</label>
+      <input type="file" class="form-control" @change="handleFileChange($event)">
+      <div v-if="errors.image" class="alert alert-danger mt-2">
+        <span>{{ errors.image[0] }}</span>
       </div>
     </div>
-  </div>
+    <div class="space-y-3">
+      <label>Title</label>
+      <input v-model="title" type="text" class="form-control" placeholder="Title Post">
+      <div v-if="errors.title" class="alert alert-danger mt-2">
+        <span>{{ errors.title[0] }}</span>
+      </div>
+    </div>
+    <div class="space-y-3">
+      <label>Content</label>
+      <UTextarea v-model="content" class="form-control" rows="5" placeholder="Content Post" />
+      <div v-if="errors.content" class="alert alert-danger mt-2">
+        <span>{{ errors.content[0] }}</span>
+      </div>
+    </div>
+    <UButton color="sky" variant="soft" type="submit" class="mt-3">
+      Update
+    </UButton>
+  </form>
 </template>
