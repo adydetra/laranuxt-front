@@ -1,75 +1,38 @@
-# Nuxt 3 Minimal Starter
+# Laranuxt 🚀
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+![Laravel](https://img.shields.io/badge/Laravel-%23FF2D20.svg?logo=Laravel&logoColor=white)
+![Nuxtjs](https://img.shields.io/badge/Nuxt-002E3B?logo=nuxtdotjs&logoColor=#00DC82)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1.svg?logo=MySQL&logoColor=white)
+![Static Badge](https://img.shields.io/badge/license-MIT-brightgreen?label=LICENSE)
 
-## Setup
+## Todolist
 
-Make sure to install the dependencies:
+- FEATURES
+  - [ ] Search
+  - [ ] Sort
+- API
+  - [x] GET
+  - [x] POST
+  - [x] DELETE
+- UI
+  - [ ] Table
+  - [ ] Form
+  - [ ] Skeleton
+  - [ ] Responsive all device
+- [ ] OG Image
+- [x] Sitemap
+- [ ] Refactor logic from Vue SFC to composables
 
-```bash
-# npm
-npm install
+## Contributing
 
-# pnpm
-pnpm install
+If you want to contribute adding new features or fixing bugs, please follow these steps:
 
-# yarn
-yarn install
+1. Fork the repository.
+2. Create a new branch: `git checkout -b example-name`
+3. Make your changes and commit them: `git commit -m 'Add new example-name`
+4. Push to the branch: `git push origin example-name`
+5. Open a pull request.
 
-# bun
-bun install
-```
+## License
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+The code is licensed [MIT](LICENSE)
