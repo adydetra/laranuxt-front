@@ -1,0 +1,28 @@
+{
+  "name": "laranuxt-front",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "@nuxt/image": "^1.5.0",
+    "@nuxt/ui": "^2.15.1",
+    "nuxt": "^3.11.2",
+    "valibot": "^0.30.0",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.12.1",
+    "@nuxtjs/sitemap": "^5.1.2",
+    "eslint": "^8.57.0",
+    "eslint-plugin-format": "^0.1.0"
+  }
+}
