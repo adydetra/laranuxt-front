@@ -1,4 +1,8 @@
 <script setup lang="ts">
+definePageMeta({
+  layout: 'post',
+});
+
 useHead({
   title: 'Create',
 });
