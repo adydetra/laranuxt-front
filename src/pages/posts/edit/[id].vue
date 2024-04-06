@@ -48,21 +48,21 @@ async function updatePost() {
 <template>
   <Back />
   <form @submit.prevent="updatePost()">
-    <div class="space-y-3">
+    <div class="space-y-3 my-3">
       <label>Image</label>
       <input type="file" class="form-control" @change="handleFileChange($event)">
       <div v-if="errors.image" class="alert alert-danger mt-2">
         <span>{{ errors.image[0] }}</span>
       </div>
     </div>
-    <div class="space-y-3">
+    <div class="space-y-3 my-3">
       <label>Title</label>
-      <input v-model="title" type="text" class="form-control" placeholder="Title Post">
+      <UInput v-model="title" placeholder="Title" />
       <div v-if="errors.title" class="alert alert-danger mt-2">
         <span>{{ errors.title[0] }}</span>
       </div>
     </div>
-    <div class="space-y-3">
+    <div class="space-y-3 my-3">
       <label>Content</label>
       <UTextarea v-model="content" class="form-control" rows="5" placeholder="Content Post" />
       <div v-if="errors.content" class="alert alert-danger mt-2">
