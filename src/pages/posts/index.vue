@@ -22,7 +22,6 @@ async function deletePost(id: number) {
     </UButton>
     <div class="card border-0 rounded shadow">
       <div class="card-body">
-        <!-- <UTable :rows="posts.data.data" /> -->
         <table class="table table-bordered w-full">
           <thead class="text-white">
             <tr>
@@ -43,7 +42,7 @@ async function deletePost(id: number) {
           <tbody>
             <tr v-for="(post, index) in posts.data.data" :key="index">
               <td>
-                <img :src="post.image" class="size-80 rounded-xl mx-auto">
+                <NuxtImg :src="post.image" class="size-80 rounded-xl mx-auto" />
               </td>
               <td class="text-center">
                 {{ post.title }}
