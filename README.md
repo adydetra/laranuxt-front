@@ -17,10 +17,10 @@
   - [x] POST
   - [x] DELETE
 - UI
-  - [ ] Table
-  - [ ] Form
+  - [x] Table
+  - [x] Form
   - [ ] Skeleton
-  - [ ] Responsive all device
+  - [x] Responsive all device
 - [ ] OG Image
 - [x] Sitemap
 - [x] Deploy
