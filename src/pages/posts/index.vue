@@ -30,7 +30,7 @@ async function deletePost(id: number) {
         <ColorMode />
       </div>
     </div>
-    <div v-if="pending">
+    <div v-if="pending" class="mt-12 text-center">
       Loading ...
     </div>
     <div v-else>
