@@ -34,7 +34,7 @@ async function deletePost(id: number) {
       Loading ...
     </div>
     <div v-else>
-      <table class="border-collapse table-fixed w-full mt-12">
+      <table class="table-fixed w-full mt-12">
         <thead>
           <tr>
             <th>Image</th>
@@ -43,7 +43,7 @@ async function deletePost(id: number) {
             <th>Actions</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody class="divide-y divide-gray-200 dark:divide-gray-800">
           <tr v-for="(post, index) in posts.data.data" :key="index">
             <td>
               <NuxtImg :src="post.image" class="size-20 rounded-xl mx-auto" />
