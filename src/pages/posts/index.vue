@@ -9,7 +9,7 @@ useHead({
 
 const config = useRuntimeConfig();
 
-const { data: posts }: any = await useAsyncData('posts', () => $fetch(`${config.public.apiBase}/api/posts`));
+const { pending, data: posts }: any = await useLazyAsyncData('posts', () => $fetch(`${config.public.apiBase}/api/posts`));
 
 async function deletePost(id: number) {
   await $fetch(`${config.public.apiBase}/api/posts/${id}`, {
@@ -30,33 +30,38 @@ async function deletePost(id: number) {
         <ColorMode />
       </div>
     </div>
-    <table class="border-collapse table-fixed w-full mt-12">
-      <thead>
-        <tr>
-          <th>Image</th>
-          <th>Title</th>
-          <th>Content</th>
-          <th>Actions</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr v-for="(post, index) in posts.data.data" :key="index">
-          <td>
-            <NuxtImg :src="post.image" class="size-20 rounded-xl mx-auto" />
-          </td>
-          <td class="text-center">
-            {{ post.title }}
-          </td>
-          <td class="text-center">
-            {{ post.content }}
-          </td>
-          <td class="space-x-4 text-center">
-            <UButton icon="i-heroicons-pencil-square-16-solid" size="sm" color="yellow" variant="soft" :to="`/posts/edit/${post.id}`" />
-            <UButton icon="i-heroicons-trash" size="sm" color="red" variant="soft" @click="deletePost(post.id)" />
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <div v-if="pending">
+      Loading ...
+    </div>
+    <div v-else>
+      <table class="border-collapse table-fixed w-full mt-12">
+        <thead>
+          <tr>
+            <th>Image</th>
+            <th>Title</th>
+            <th>Content</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="(post, index) in posts.data.data" :key="index">
+            <td>
+              <NuxtImg :src="post.image" class="size-20 rounded-xl mx-auto" />
+            </td>
+            <td class="text-center">
+              {{ post.title }}
+            </td>
+            <td class="text-center">
+              {{ post.content }}
+            </td>
+            <td class="space-x-4 text-center">
+              <UButton icon="i-heroicons-pencil-square-16-solid" size="sm" color="yellow" variant="soft" :to="`/posts/edit/${post.id}`" />
+              <UButton icon="i-heroicons-trash" size="sm" color="red" variant="soft" @click="deletePost(post.id)" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </template>
 
