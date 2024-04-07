@@ -39,6 +39,10 @@ export default defineNuxtConfig({
     preference: 'light',
   },
 
+  tailwindcss: {
+    viewer: false,
+  },
+
   devtools: {
     enabled: false,
   },
