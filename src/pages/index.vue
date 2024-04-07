@@ -1,3 +1,9 @@
+<script setup lang="ts">
+useHead({
+  title: 'Laranuxt',
+});
+</script>
+
 <template>
   <section class="flex justify-center items-center h-dvh gap-12">
     <NuxtImg src="/logo/laravel.svg" alt="" aria-label="" class="size-20" />
