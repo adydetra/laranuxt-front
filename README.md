@@ -5,6 +5,8 @@
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1.svg?logo=MySQL&logoColor=white)
 ![Static Badge](https://img.shields.io/badge/license-MIT-brightgreen?label=LICENSE)
 
+[Frontend (Nuxt)](https://github.com/adydetra/laranuxt-front)
+
 ## Todolist
 
 - FEATURES
