@@ -21,10 +21,16 @@ async function deletePost(id: number) {
 
 <template>
   <div class="container mt-5 mb-5">
-    <UButton to="/posts/create" color="sky" variant="soft" class="btn btn-md btn-success rounded shadow border-0 mb-3">
-      Add Post
-    </UButton>
-    <table class="border-collapse table-fixed w-full">
+    <div class="flex justify-between items-center">
+      <Back />
+      <div class="space-x-6 flex items-center">
+        <UButton to="/posts/create" color="sky" variant="soft">
+          Add Post
+        </UButton>
+        <ColorMode />
+      </div>
+    </div>
+    <table class="border-collapse table-fixed w-full mt-12">
       <thead>
         <tr>
           <th>Image</th>

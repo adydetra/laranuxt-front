@@ -35,6 +35,10 @@ export default defineNuxtConfig({
     url: 'https://localhost:3000',
   },
 
+  colorMode: {
+    preference: 'light',
+  },
+
   devtools: {
     enabled: false,
   },
