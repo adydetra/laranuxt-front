@@ -51,21 +51,21 @@ async function storePost() {
   <form @submit.prevent="storePost()">
     <div class="space-y-3 my-5">
       <UInput type="file" @change="handleFileChange($event)" />
-      <div v-if="errors.image" class="alert alert-danger mt-2">
+      <div v-if="errors.image" class="text-red-500 mt-2">
         <span>{{ errors.image[0] }}</span>
       </div>
     </div>
     <div class="space-y-3 my-5">
       <label>Title</label>
       <UInput v-model="title" placeholder="Title" />
-      <div v-if="errors.title" class="alert alert-danger mt-2">
+      <div v-if="errors.title" class="text-red-500 mt-2">
         <span>{{ errors.title[0] }}</span>
       </div>
     </div>
     <div class="space-y-3 my-5">
       <label>Content</label>
       <UTextarea v-model="content" class="form-control" rows="5" placeholder="Content Post" />
-      <div v-if="errors.content" class="alert alert-danger mt-2">
+      <div v-if="errors.content" class="text-red-500 mt-2">
         <span>{{ errors.content[0] }}</span>
       </div>
     </div>
