@@ -21,7 +21,8 @@
   - [x] Form
   - [ ] Skeleton
   - [x] Responsive all device
-- [ ] OG Image
+- [x] OG Image
+- [ ] Favicon
 - [x] Sitemap
 - [x] Deploy
 - [ ] Refactor logic from Vue SFC to composables
