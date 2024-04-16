@@ -50,7 +50,7 @@ async function updatePost() {
 </script>
 
 <template>
-  <Back />
+  <AppBack />
   <form @submit.prevent="updatePost()">
     <div class="space-y-3 my-5">
       <UInput type="file" @change="handleFileChange($event)" />

@@ -22,12 +22,12 @@ async function deletePost(id: number) {
 <template>
   <div class="container mt-5 mb-5">
     <div class="flex justify-between items-center">
-      <Back />
+      <AppBack />
       <div class="space-x-6 flex items-center">
         <UButton to="/posts/create" color="sky" variant="soft">
           Add Post
         </UButton>
-        <ColorMode />
+        <AppColorMode />
       </div>
     </div>
     <div v-if="pending" class="mt-12 text-center">

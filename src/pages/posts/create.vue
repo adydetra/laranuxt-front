@@ -47,7 +47,7 @@ async function storePost() {
 </script>
 
 <template>
-  <Back />
+  <AppBack />
   <form @submit.prevent="storePost()">
     <div class="space-y-3 my-5">
       <UInput type="file" @change="handleFileChange($event)" />
