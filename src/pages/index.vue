@@ -2,6 +2,8 @@
 useHead({
   title: 'Laranuxt',
 });
+
+defineOgImageComponent('OpenGraph');
 </script>
 
 <template>

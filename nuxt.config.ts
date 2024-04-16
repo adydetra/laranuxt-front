@@ -29,10 +29,17 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/ui',
     '@nuxtjs/sitemap',
+    'nuxt-og-image'
   ],
 
   site: {
     url: 'https://localhost:3000',
+  },
+
+  ogImage: {
+    fonts: [
+      'Outfit:400',
+    ],
   },
 
   colorMode: {
@@ -44,7 +51,7 @@ export default defineNuxtConfig({
   },
 
   devtools: {
-    enabled: false,
+    enabled: true,
   },
 
   sitemap: {
