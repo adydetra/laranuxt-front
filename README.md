@@ -25,7 +25,6 @@
 - [ ] Favicon
 - [x] Sitemap
 - [x] Deploy
-- [ ] Refactor logic from Vue SFC to composables
 
 ## Contributing
 
