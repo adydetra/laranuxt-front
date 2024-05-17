@@ -12,18 +12,18 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "@nuxt/image": "^1.5.0",
-    "@nuxt/ui": "^2.15.1",
+    "@nuxt/image": "^1.7.0",
+    "@nuxt/ui": "^2.16.0",
     "nuxt": "^3.11.2",
-    "nuxt-og-image": "^3.0.0-rc.52",
+    "nuxt-og-image": "^3.0.0-rc.53",
     "valibot": "^0.30.0",
-    "vue": "^3.4.21",
-    "vue-router": "^4.3.0"
+    "vue": "^3.4.27",
+    "vue-router": "^4.3.2"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.12.1",
-    "@nuxtjs/sitemap": "^5.1.2",
-    "eslint": "^8.57.0",
-    "eslint-plugin-format": "^0.1.0"
+    "@antfu/eslint-config": "^2.18.1",
+    "@nuxtjs/sitemap": "^5.1.5",
+    "eslint": "^9.3.0",
+    "eslint-plugin-format": "^0.1.1"
   }
 }
